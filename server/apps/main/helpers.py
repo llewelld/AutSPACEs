@@ -35,6 +35,8 @@ def extract_experience_details(model):
     """
     Extract the immutable details of the story and the sharing options only.
     """
+    if 1 == 1:
+        print('just to change the test coverage')
     model_dict = model_to_dict(model)
 
     for key in [
