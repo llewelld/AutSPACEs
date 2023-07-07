@@ -9,8 +9,10 @@
 | server/apps/\_\_init\_\_.py                                               |        0 |        0 |    100% |           |
 | server/apps/main/\_\_init\_\_.py                                          |        0 |        0 |    100% |           |
 | server/apps/main/admin.py                                                 |        4 |        0 |    100% |           |
-| server/apps/main/forms.py                                                 |       71 |       13 |     82% |62-72, 76-80, 130, 138 |
-| server/apps/main/helpers.py                                               |       91 |       11 |     88% |70, 129, 165, 180-195, 204, 255 |
+| server/apps/main/apps.py                                                  |        3 |        0 |    100% |           |
+| server/apps/main/context\_processors.py                                   |        4 |        0 |    100% |           |
+| server/apps/main/forms.py                                                 |       75 |        1 |     99% |       140 |
+| server/apps/main/helpers.py                                               |      224 |        1 |     99% |       560 |
 | server/apps/main/migrations/0001\_initial.py                              |        6 |        0 |    100% |           |
 | server/apps/main/migrations/0002\_add\_fields\_to\_public\_experiences.py |        4 |        0 |    100% |           |
 | server/apps/main/migrations/0003\_publicexperience\_title\_text.py        |        4 |        0 |    100% |           |
@@ -20,26 +22,45 @@
 | server/apps/main/migrations/0007\_auto\_20230123\_1341.py                 |        4 |        0 |    100% |           |
 | server/apps/main/migrations/0008\_experiencehistory.py                    |        5 |        0 |    100% |           |
 | server/apps/main/migrations/0009\_auto\_20230327\_1226.py                 |        5 |        0 |    100% |           |
+| server/apps/main/migrations/0010\_experiencehistory\_change\_reply.py     |        4 |        0 |    100% |           |
 | server/apps/main/migrations/\_\_init\_\_.py                               |        0 |        0 |    100% |           |
-| server/apps/main/models.py                                                |       27 |        2 |     93% |    29, 42 |
+| server/apps/main/models.py                                                |       28 |        1 |     96% |        43 |
 | server/apps/main/templatetags/\_\_init\_\_.py                             |        0 |        0 |    100% |           |
-| server/apps/main/templatetags/custom\_tags.py                             |       12 |        4 |     67% |  9, 13-16 |
+| server/apps/main/templatetags/custom\_tags.py                             |       22 |        1 |     95% |        17 |
 | server/apps/main/tests/\_\_init\_\_.py                                    |        0 |        0 |    100% |           |
-| server/apps/main/tests/test\_helpers.py                                   |      125 |        0 |    100% |           |
+| server/apps/main/tests/test\_helpers.py                                   |      178 |        0 |    100% |           |
+| server/apps/main/tests/test\_models.py                                    |       25 |        0 |    100% |           |
+| server/apps/main/tests/test\_moderate\_views.py                           |      185 |        0 |    100% |           |
+| server/apps/main/tests/test\_my\_stories.py                               |       15 |        0 |    100% |           |
+| server/apps/main/tests/test\_templatetags.py                              |       12 |        0 |    100% |           |
+| server/apps/main/tests/test\_views.py                                     |      288 |        3 |     99% |   631-633 |
 | server/apps/main/tests/tests\_2023.py                                     |       12 |        7 |     42% |     11-35 |
 | server/apps/main/urls.py                                                  |        4 |        0 |    100% |           |
-| server/apps/main/views.py                                                 |      124 |       94 |     24% |39, 43, 47, 51, 55, 59-61, 68-70, 76-80, 87-95, 103-159, 166-182, 191-206, 218-248, 257-273, 281-288, 293-356 |
+| server/apps/main/views.py                                                 |      223 |        6 |     97% |85, 89, 164, 296-302, 498 |
+| server/apps/users/\_\_init\_\_.py                                         |        0 |        0 |    100% |           |
+| server/apps/users/admin.py                                                |        3 |        0 |    100% |           |
+| server/apps/users/apps.py                                                 |        3 |        0 |    100% |           |
+| server/apps/users/forms.py                                                |       31 |        0 |    100% |           |
+| server/apps/users/helpers.py                                              |       11 |        0 |    100% |           |
+| server/apps/users/migrations/0001\_initial.py                             |        6 |        0 |    100% |           |
+| server/apps/users/migrations/\_\_init\_\_.py                              |        0 |        0 |    100% |           |
+| server/apps/users/models.py                                               |       19 |        0 |    100% |           |
+| server/apps/users/tests/\_\_init\_\_.py                                   |        0 |        0 |    100% |           |
+| server/apps/users/tests/test\_models.py                                   |       64 |        0 |    100% |           |
+| server/apps/users/tests/test\_views.py                                    |       91 |        0 |    100% |           |
+| server/apps/users/urls.py                                                 |        4 |        0 |    100% |           |
+| server/apps/users/views.py                                                |       28 |        0 |    100% |           |
 | server/settings/\_\_init\_\_.py                                           |        8 |        0 |    100% |           |
 | server/settings/components/\_\_init\_\_.py                                |        4 |        0 |    100% |           |
 | server/settings/components/caches.py                                      |        2 |        0 |    100% |           |
-| server/settings/components/common.py                                      |       36 |        0 |    100% |           |
+| server/settings/components/common.py                                      |       39 |        0 |    100% |           |
 | server/settings/components/csp.py                                         |        5 |        0 |    100% |           |
 | server/settings/components/logging.py                                     |        3 |        0 |    100% |           |
 | server/settings/environments/\_\_init\_\_.py                              |        1 |        0 |    100% |           |
-| server/settings/environments/development.py                               |       26 |        1 |     96% |        63 |
+| server/settings/environments/development.py                               |       27 |        0 |    100% |           |
 | server/settings/environments/local.py                                     |        0 |        0 |    100% |           |
-| server/urls.py                                                            |       11 |        0 |    100% |           |
-|                                                                 **TOTAL** |  **617** |  **134** | **78%** |           |
+| server/urls.py                                                            |       12 |        0 |    100% |           |
+|                                                                 **TOTAL** | **1718** |   **22** | **99%** |           |
 
 
 ## Setup coverage badge
